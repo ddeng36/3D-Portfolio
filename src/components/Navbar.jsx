@@ -4,14 +4,26 @@ import styled from "styled-components";
 const Section = styled.div`
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 768px
+    ) {
+    width: 100%;
+  }
+
 `;
 const Container = styled.div`
   width: 1200px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 `;
 const Links = styled.div`
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+    
+  }
   display: flex;
   gap: 50px;
 `;
@@ -19,12 +31,17 @@ const Links = styled.div`
 const Logo = styled.img`
   width: 100px;
   height: 62.6px;
+
 `;
 const List = styled.ul`
   display: flex;
   gap: 50px;
   align-items: center;
   list-style: none;
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
 `;
 const ListItem = styled.li`
   cursor: pointer;

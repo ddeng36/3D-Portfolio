@@ -17,6 +17,9 @@ const Container = styled.div`
   gap: 20px;
   scroll-snap-align: center;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 const Left = styled.div`
   flex: 1;

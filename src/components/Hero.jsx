@@ -12,6 +12,9 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+  }
 `;
 const Container = styled.div`
   height: 100%;
@@ -20,6 +23,15 @@ const Container = styled.div`
   display: flex;
   scroll-snap-align: center;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
 `;
 const Left = styled.div`
   flex: 2;
@@ -27,11 +39,18 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  @media only screen and (min-width: 768px){
+    flex: 1;
+    text-align: center;
+  }
 `;
 
 const Right = styled.div`
   flex: 3;
   position: relative;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 const Title = styled.h1`
   font-size: 74px;
@@ -50,6 +69,11 @@ const SubTitle = styled.h2`
 `;
 const Desc = styled.p`
   font-size: 24px;
+  color: lightgray;
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    padding: 20px;
+  }
 `;
 const Button = styled.button`
   border: none;

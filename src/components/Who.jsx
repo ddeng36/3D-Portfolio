@@ -19,6 +19,12 @@ const Container = styled.div`
   scroll-snap-align: center;
   justify-content: space-between;
   gap: 20px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    height: 200vh;
+  }
 `;
 const Right = styled.div`
   flex: 1;
@@ -26,6 +32,11 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 `;
 
 const Left = styled.div`
@@ -34,6 +45,9 @@ const Left = styled.div`
 `;
 const Title = styled.h1`
   font-size: 74px;
+  @media screen and (max-width: 768px){
+    font-size: 60px;
+  }
 `;
 
 const WhatWeDo = styled.div`

@@ -19,6 +19,9 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+  }
 `;
 const Container = styled.div`
   height: 100%;
@@ -27,6 +30,10 @@ const Container = styled.div`
   display: flex;
   scroll-snap-align: center;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 const Right = styled.div`
   display: flex;
@@ -74,6 +81,9 @@ const Left = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    flex: 1;
+  }
 `;
 const Works = () => {
   const [work, setWork] = useState("Web Design");
