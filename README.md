@@ -21,3 +21,8 @@ npm install
 ```
 npm run dev
 ```
+## License
+  - This project is licensed under the MIT License. Feel free to use and modify the code as per the terms of the license.
+
+## Acknowledgements
+  - The implementation of this chat application was inspired by various online resources and tutorials. We would like to acknowledge the contribution of these resources in developing this project.
